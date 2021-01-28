@@ -4,15 +4,13 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
 
 public class ConsoleReadTest {
 
     private final String CORRECT = "hello world text file to test classes";
 
     @Test
-    public void test() {
+    public void testConsoleReaderShouldReadDataLineFromConsole() {
         ConsoleRead reader = new ConsoleRead();
         ByteArrayInputStream in = new ByteArrayInputStream(CORRECT.getBytes());
 
