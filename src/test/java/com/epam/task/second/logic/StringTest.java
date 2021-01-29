@@ -13,18 +13,18 @@ public class StringTest {
 
     @Test
     public void testRemoveSymbolsShouldRemoveAllNonLiteralsAndInsertSpaces() {
-        StringMethods remove = new StringMethods();
+        StringMethods str = new StringMethods();
 
-        String result = remove.removeSymbols(TEST_REMOVE_INSERT);
+        String result = str.removeSymbols(TEST_REMOVE_INSERT);
 
         Assert.assertEquals(EXPECTED_RI, result);
     }
 
     @Test
-    public void testReplaceSymbolsShouldReplaceKthSymbol() {
-        StringMethods replace = new StringMethods();
+    public void testReplaceLetterShouldReplaceKthSymbol() {
+        StringMethods str = new StringMethods();
 
-        String result = replace.replaceLetter(TEST_REPLACE_K);
+        String result = str.replaceLetter(TEST_REPLACE_K);
 
         Assert.assertEquals(EXPECTED_RK, result);
     }
