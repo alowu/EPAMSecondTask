@@ -7,10 +7,12 @@ public interface TextProcessor {
     String spaces = "$0 ";
     String trimSpaces = "^\\s+|\\s+$";
     String empty = "";
+    /*String replaceLast = "\\w{5}";
+    String substituteST = "$0_";*/
 
     int replacePosition = 5;
     String delimiter = " ";
-    char substitute = '_';
+    char substituteCH = '_';
 
     String removeSymbols(String string);
 

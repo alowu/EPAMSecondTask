@@ -85,7 +85,7 @@ public class CharMethods implements TextProcessor {
             int endOfWord = getWord(str, i);
             int wordLen = endOfWord - i;
             if (wordLen >= replacePosition) {
-                str[i + replacePosition - 1] = substitute;
+                str[i + replacePosition - 1] = substituteCH;
             }
             for (int begin = i; begin < endOfWord; ++begin) {
                 result[begin] = str[begin];

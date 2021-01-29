@@ -23,7 +23,7 @@ public class StringMethods implements TextProcessor {
         for (String word : words) {
             StringBuilder buffer = new StringBuilder(word);
             if (word.length() >= replacePosition) {
-                buffer.setCharAt(replacePosition - 1, substitute);
+                buffer.setCharAt(replacePosition - 1, substituteCH);
             }
             result.append(buffer).append(delimiter);
         }
