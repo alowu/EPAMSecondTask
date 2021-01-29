@@ -6,17 +6,13 @@ public class StringMethods implements TextProcessor {
 
     private final static Logger LOGGER = Logger.getLogger(StringMethods.class);
 
-    private final String removeAllNonWordSymbols = "[\\d+\\W ]";
-    private final String insertSpaces = ".(?=.)";
-    private final String spaces = "$0 ";
-
     @Override
     public String removeSymbols(String string) {
-        String buffer = string.replaceAll(removeAllNonWordSymbols, "");
+        String buffer = string.replaceAll(removeAllNonWordSymbols, empty);
         LOGGER.info("Remove all non-word symbols from the string");
         String result = buffer.replaceAll(insertSpaces, spaces);
         LOGGER.info("Separate all symbols by spaces");
-        return result;
+        return result.replaceAll(trimSpaces, empty);
     }
 
     @Override
