@@ -27,9 +27,9 @@ public class RegexMethods implements TextProcessor{
 
     @Override
     public String replaceLetter(String string) {
-        /*Pattern pattern = Pattern.compile(replaceLast);
+        Pattern pattern = Pattern.compile(replaceKth);
         Matcher matcher = pattern.matcher(string);
-        String result = matcher.replaceAll(substituteST);*/
-        return null;
+        String result = matcher.replaceAll(substituteST);
+        return result;
     }
 }
